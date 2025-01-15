@@ -1,0 +1,26 @@
+@import './modern-normalize.css';
+
+@font-face {
+  font-family: 'Antartica-Light';
+  src: url('./fonts/Antarctica-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Antartica-SemiBold';
+  src: url('./fonts/Antarctica-SemiBold.otf') format('opentype');}
+
+@font-face {
+  font-family: 'BRP';
+  src: url('./fonts/Beau-Rivage-Title.otf') format('opentype');
+}
+
+:root {
+  --peach-yellow: #FADFAD;
+  --cararra: #EEEEE8;
+  --woodsmoke: #0C0D0F;
+  --whitesmoke: #F5F5F5;
+
+  --brp-font: 'BRP';
+  --antarctica-light: 'Antartica-Light';
+  --antarctica-semibold: 'Antartica-SemiBold';
+}

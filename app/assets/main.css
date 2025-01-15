@@ -1,0 +1,38 @@
+@import './base.css';
+
+/* Redéfinir les styles globaux pour les titres */
+h1, h2 {
+  font-family: var(--brp-font);
+}
+
+h3, h4, h5, h6 {
+  font-family: var(--antarctica-semibold);
+}
+
+body {
+  font-family: var(--antarctica-light);
+  background-color: var(--whitesmoke);
+  color: var(--woodsmoke);
+  font-size: 1rem;
+}
+
+h1 {
+font-size: 5.375rem;
+} 
+
+h2 {
+font-size: 3rem;
+}
+
+h3 {
+font-size: 2rem;
+}
+
+h4 {
+font-size: 1.5rem;
+}
+
+.legend {
+  font-size: 0.75rem;
+}
+
