@@ -13,10 +13,10 @@
             </div>
             <div class="footer-vertical-line-separator footer-mobile"></div>
             <div class="footer-labels">
-                <SvgoLogoLeadersClub class="footer-label" />
-                <SvgoLogoLeadingHotels class="footer-label" />
-                <SvgoLogoSwissDeluxeHotels class="footer-label" />
-                <SvgoLogoSwisstainable class="footer-label" />
+                <SvgoFooterLogoLeadersClub class="footer-label" />
+                <SvgoFooterLogoLeadingHotels class="footer-label" />
+                <SvgoFooterLogoSwissDeluxeHotels class="footer-label" />
+                <SvgoFooterLogoSwisstainable class="footer-label" />
             </div>
         </div>
         <div>
@@ -24,7 +24,7 @@
         </div>
         <div>
             <div class="footer-foundation-logo">
-                <SvgoLogoFondationSandoz class="footer-foundation-logo" />
+                <SvgoFooterLogoFondationSandoz class="footer-foundation-logo" />
             </div>
             <div class="footer-foundation-hotels-links">
                 <a href="https://www.lausanne-palace.ch/">Lausanne Palace</a>
