@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   // https://nuxt.com/modules
-  modules: ['@nuxthub/core', '@nuxt/eslint', 'nuxt-svgo'],
+  modules: ['@nuxthub/core', '@nuxt/eslint', 'nuxt-svgo', '@nuxt/image'],
 
   // https://devtools.nuxt.com
   devtools: { enabled: true },
