@@ -6,6 +6,11 @@ const props = defineProps({
         type: String,
         required: true,
     },
+    hideTitle: {
+        type: Boolean,
+        required: false,
+        default: false,
+    },
     bgSvgUrlEncode: {
         type: String,
         required: false,
@@ -19,7 +24,7 @@ console.log(bgImgStyle);
 
 <template>
     <div class="page-title">
-        <h1>{{ $props.title }}</h1>
+        <h1 v-show="!props.hideTitle">{{ $props.title }}</h1>
         <slot></slot>
     </div>
 </template>
