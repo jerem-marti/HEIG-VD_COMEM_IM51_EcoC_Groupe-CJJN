@@ -1,5 +1,9 @@
 @import './base.css';
 
+html, body {
+  overflow-x: hidden;
+}
+
 /* Redéfinir les styles globaux pour les titres */
 h1, h2 {
   font-family: var(--brp-font), 'Georgia', serif;
