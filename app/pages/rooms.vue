@@ -1,8 +1,6 @@
 <template>
   <main>
-    <div class="title">
-      <h1>Chambres et suites</h1>
-    </div>
+    <ThePageHero title="Chambres et suites" :bgSvgUrlEncode="BackgroundHexagon" />
     <div class="rooms">
       <h2>Chambres</h2>
       <div class="rooms-grid">
@@ -17,6 +15,8 @@
 
 <script setup>
 import { ref } from 'vue';
+import ThePageHero from '~/components/ThePageHero.vue';
+import BackgroundHexagon from '~/assets/icons/hero/background-hexagon.svg?url_encode';
 
 const rooms = ref([
   {
@@ -76,15 +76,8 @@ main {
   margin-right: 7%;
 }
 
-.title {
-  background-image: url('../../public/svg/fond-rooms.svg');
-  background-position: center;
-  background-size: auto 100%;
-  width: 100%;
-  height: 40rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.rooms {
+  margin-bottom: 4rem;
 }
 
 .rooms-grid {

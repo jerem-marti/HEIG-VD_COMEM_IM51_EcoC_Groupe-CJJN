@@ -15,7 +15,7 @@
     </div>
     <div :class="['button-container', isFlipped ? 'back' : 'front']">
       <div v-if="!isFlipped" class="rotate-icon"></div>
-      <Button v-if="!isFlipped" class="info-button" msg="Informations" @click="goToRoom" />
+      <LinkButton v-if="!isFlipped" class="info-button" msg="Informations" :path="path" />
       <SvgoRotateIcon :class="['rotate-icon', isFlipped ? 'back' : 'front']" @click="flipCard" />
     </div>
   </div>
@@ -65,9 +65,7 @@ function flipCard() {
   isFlipped.value = !isFlipped.value;
 }
 
-function goToRoom() {
-  router.push(`/rooms/${props.id}`);
-}
+const path = `/rooms/${props.id}`;
 
 </script>
 
@@ -75,7 +73,7 @@ function goToRoom() {
 .card-container {
   display: flex;
   flex-direction: column;
-  padding: 10%;
+  padding: 2rem;
   aspect-ratio: 5/6;
   justify-content: space-between;
   background-color: var(--cararra);
@@ -106,6 +104,10 @@ h4 {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+}
+
+.button-container .info-button {
+  text-shadow: none;
 }
 
 .rotate-icon {

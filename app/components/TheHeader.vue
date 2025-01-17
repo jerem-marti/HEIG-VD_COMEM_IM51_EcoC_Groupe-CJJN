@@ -12,7 +12,7 @@
             <NuxtLink to="/spas" class="header-nav list-item-link" exact-active-class="active">Spa Guerlain</NuxtLink>
         </div>
         <div class="button-container">
-            <Button msg="Réserver" />
+            <LinkButton class="button" msg="Réserver" path="/reservation" />
         </div>
 
     </header>
@@ -30,7 +30,6 @@ header {
     background-color: var(--cararra);
     align-items: stretch;
     justify-content: space-between;
-
 }
 
 .header-nav {
@@ -62,7 +61,7 @@ header {
     align-items: center;
 }
 
-button {
+.button {
     margin-right: 1rem;
 }
 

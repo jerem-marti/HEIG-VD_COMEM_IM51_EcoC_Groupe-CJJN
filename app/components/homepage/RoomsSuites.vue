@@ -19,7 +19,7 @@
                             <li>Superficie de 25 à 30 m²</li>
                             <li>1 lit king-size ou 2 lits jumeaux</li>
                         </ul>
-                        <a href="#">Voir les chambres</a>
+                        <LinkButton msg="Voir les chambres" path="#" />
                     </div>                    
                 </div>
             </div>
@@ -38,7 +38,7 @@
                             <li>Superficie de 25 à 30 m²</li>
                             <li>1 lit king-size ou 2 lits jumeaux</li>
                         </ul>
-                        <a href="#">Voir les chambres</a>
+                        <LinkButton msg="Voir les chambres" path="#" />
                     </div>                    
                 </div>
             </div>

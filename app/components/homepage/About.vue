@@ -1,4 +1,5 @@
 <script setup>
+
 </script>
 
 <template>
@@ -16,10 +17,14 @@
                     alt="Photo aérienne du Beau Rivage Palace"
                     sizes="xs:100vw sm:80vw lg:50vw"
                 ></NuxtImg>
-                <a href="#">Découvrir l'histoire du Beau Rivage</a>
+                <LinkButton msg="Découvrir l'histoire du Beau Rivage" path="#" />
             </div>
         </div>
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+img {
+    margin: 0.5rem 0;
+}
+</style>

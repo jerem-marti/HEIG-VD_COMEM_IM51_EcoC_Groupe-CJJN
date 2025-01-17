@@ -24,7 +24,7 @@
                     <p>L’univers d’Anne-Sophie Pic au Beau-Rivage Palace à Lausanne, c’est bien plus qu’un restaurant,
                         c’est un cheminement en terres helvétiques qui dure depuis 15 ans ! 15 ans de rencontres, de
                         création, de dégustation, de cueillettes en forêt, de contemplation...</p>
-                    <a href="#">Miam miam</a>
+                    <LinkButton msg="Miam miam" path="#" />
                     <h3>Informations pratiques</h3>
                     <ul>
                         <li>Du mardi au samedi : de 12h00 à 13h30 et de 19h00 à 21h30</li>
