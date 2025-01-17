@@ -17,6 +17,9 @@ importers:
       nuxt-svgo:
         specifier: 4.0.11
         version: 4.0.11(magicast@0.3.5)(rollup@4.24.4)(vue@3.5.13(typescript@5.7.3))
+      nuxt-viewport:
+        specifier: 2.2.0
+        version: 2.2.0(magicast@0.3.5)(rollup@4.24.4)(vue@3.5.13(typescript@5.7.3))
       vue:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.7.3)
@@ -2323,6 +2326,9 @@ packages:
     resolution: {integrity: sha512-yki5XnKuf750l50uGTllt6kKILY4nQ1eNIQatoXEByZ5dWgnKqbnqmTrBE5B4N7lrMJKQ2ytWMiTO2o0v6Ew/w==}
     engines: {node: '>= 0.6'}
 
+  cookiejs@2.1.3:
+    resolution: {integrity: sha512-pA/nRQVka2eTXm1/Dq8pNt1PN+e1PJNItah0vL15qwpet81/tUfrAp8e0iiVM8WEAzDcTGK5/1hDyR6BdBZMVg==}
+
   copy-anything@3.0.5:
     resolution: {integrity: sha512-yCEafptTtb4bk7GLEQoM8KVJpxAfdBJYaXyzQEgQQQgYrZiDp8SJmGKlYza6CYjEDNstAdNdKA3UuoULlEbS6w==}
     engines: {node: '>=12.13'}
@@ -3631,6 +3637,9 @@ packages:
         optional: true
       vue-svg-loader:
         optional: true
+
+  nuxt-viewport@2.2.0:
+    resolution: {integrity: sha512-AH8ZxL1rbl1kWauJrZqK4S59G3sCORlMh8H/SlhkAfsOlVJ+Aw7MteLFagKnRHf0HEuw44HlbDP+aty1ObkJeg==}
 
   nuxt@3.15.1:
     resolution: {integrity: sha512-8sKgqjhu5JoaVv89TnBW5S0jvsXRrEWGF+CguYUPK+6sRAtNcJAwcWxd4pEmURYQ2D0jjdfgr/VyH0i9CdhkBQ==}
@@ -5038,6 +5047,17 @@ packages:
 
   vue-bundle-renderer@2.1.1:
     resolution: {integrity: sha512-+qALLI5cQncuetYOXp4yScwYvqh8c6SMXee3B+M7oTZxOgtESP0l4j/fXdEJoZ+EdMxkGWIj+aSEyjXkOdmd7g==}
+
+  vue-demi@0.14.10:
+    resolution: {integrity: sha512-nMZBOwuzabUO0nLgIcc6rycZEebF6eeUfaiQx9+WSk8e29IbLvPU9feI6tqW4kTo3hvoYAJkMh8n8D0fuISphg==}
+    engines: {node: '>=12'}
+    hasBin: true
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^3.0.0-0 || ^2.6.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
 
   vue-devtools-stub@0.1.0:
     resolution: {integrity: sha512-RutnB7X8c5hjq39NceArgXg28WZtZpGc3+J16ljMiYnFhKvd8hITxSWQSQ5bvldxMDU6gG5mkxl1MTQLXckVSQ==}
@@ -8215,6 +8235,8 @@ snapshots:
 
   cookie@0.7.2: {}
 
+  cookiejs@2.1.3: {}
+
   copy-anything@3.0.5:
     dependencies:
       is-what: 4.1.16
@@ -9708,6 +9730,19 @@ snapshots:
       - magicast
       - rollup
       - supports-color
+
+  nuxt-viewport@2.2.0(magicast@0.3.5)(rollup@4.24.4)(vue@3.5.13(typescript@5.7.3)):
+    dependencies:
+      '@nuxt/kit': 3.15.1(magicast@0.3.5)(rollup@4.24.4)
+      bowser: 2.11.0
+      cookiejs: 2.1.3
+      vue-demi: 0.14.10(vue@3.5.13(typescript@5.7.3))
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - magicast
+      - rollup
+      - supports-color
+      - vue
 
   nuxt@3.15.1(@parcel/watcher@2.4.1)(@types/node@22.8.1)(db0@0.2.1)(encoding@0.1.13)(eslint@9.18.0(jiti@2.4.2))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.24.4)(sass-embedded@1.83.4)(terser@5.34.1)(typescript@5.7.3)(vite@6.0.7(@types/node@22.8.1)(jiti@2.4.2)(sass-embedded@1.83.4)(terser@5.34.1)(yaml@2.7.0))(vue-tsc@2.2.0(typescript@5.7.3))(webpack-sources@3.2.3)(yaml@2.7.0):
     dependencies:
@@ -11231,6 +11266,10 @@ snapshots:
   vue-bundle-renderer@2.1.1:
     dependencies:
       ufo: 1.5.4
+
+  vue-demi@0.14.10(vue@3.5.13(typescript@5.7.3)):
+    dependencies:
+      vue: 3.5.13(typescript@5.7.3)
 
   vue-devtools-stub@0.1.0: {}
 
