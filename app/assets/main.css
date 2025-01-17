@@ -1,5 +1,9 @@
 @import './base.css';
 
+html, body {
+  overflow-x: hidden;
+}
+
 /* Redéfinir les styles globaux pour les titres */
 h1, h2 {
   font-family: var(--brp-font);
@@ -32,8 +36,18 @@ h4 {
 font-size: 1.5rem;
 }
 
+img {
+  display: block; /* Évite les espaces blancs sous les images */
+  width: 100vw; /* Force l'image à occuper 100% de la largeur de la fenêtre */
+  height: auto; /* Respecte le ratio d'aspect */
+}
+
 .legend {
   font-size: 0.75rem;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
