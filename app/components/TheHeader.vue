@@ -2,7 +2,7 @@
     <header class="header">
         <div class="navbar">
             <div class="logo-container">
-                <SvgoBrpIcon class="header-logo" />
+                <SvgoBrpIcon class="header-logo" @click="navigateTo('/')" />
             </div>
             <div class="header-nav" v-if="!mobileMenuEnabled">
                 <NuxtLink to="/" class="header-nav list-item-link" exact-active-class="active">Accueil</NuxtLink>
