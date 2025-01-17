@@ -7,8 +7,8 @@
     <NuxtLink to="/chambres-suites/jeremy">Chambres & Suites</NuxtLink>
     <NuxtImg 
         src="/brp.webp"
-        sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw 2xl:100vw"
-        densities="x1"
+        sizes="xs:640px sm:768px md:1024px lg:1280px xl:1536px 2xl:100vw"
+        style="aspect-ratio: 320∶213;"
     />
     <!-- 
     sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw 2xl:100vw"
@@ -23,11 +23,3 @@
       'xxl': 1536,
       '2xl': 1536 -->
 </template>
-
-<style>
-img {
-  display: block; /* Évite les espaces blancs sous les images */
-  width: 100vw; /* Force l'image à occuper 100% de la largeur de la fenêtre */
-  height: auto; /* Respecte le ratio d'aspect */
-}
-</style>
