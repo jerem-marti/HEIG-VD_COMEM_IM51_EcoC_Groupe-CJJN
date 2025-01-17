@@ -1,7 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: true,
+  nitro: {
+    preset: 'netlify', // Spécifique à Netlify
+  },
+
   // https://nuxt.com/modules
-  modules: ['@nuxthub/core', '@nuxt/eslint', 'nuxt-svgo', '@nuxt/image'],
+  modules: ['@nuxt/eslint', 'nuxt-svgo', '@nuxt/image'],
 
   // https://devtools.nuxt.com
   devtools: { enabled: true },
