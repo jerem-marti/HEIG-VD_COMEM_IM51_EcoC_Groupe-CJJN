@@ -6,7 +6,7 @@
         <div class="row cta">
             <div class="cta__container">
                 <h2 class="h3">Ne ratez rien de ce qu’il se passe au Beau-Rivage</h2>
-                <LinkButton msg="Voir tout l’agenda du Beau-Rivage" path="#" />
+                <LinkButton msg="Voir tout l’agenda du Beau-Rivage" path="#"  color-inverted="true" />
             </div>
         </div>
     </div>

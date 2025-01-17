@@ -14,13 +14,20 @@ const props = defineProps({
     type: String,
     required: true,
   },
+  colorInverted: {
+    type: Boolean,
+    default: false,
+  },
 });
+
+const backgroundColor = props.colorInverted ? 'var(--woodsmoke)' : 'var(--peach-yellow)';
+const color = props.colorInverted ? 'var(--peach-yellow)' : 'var(--woodsmoke)';
 </script>
 
 <style scoped>
 .button {
-    background-color: var(--peach-yellow);
-    color: var(--woodsmoke);
+    background-color: v-bind(backgroundColor);
+    color: v-bind(color);
     font-size: 1rem;
     font-family: var(--antarctica-semibold);
     display: inline-flex;
@@ -32,7 +39,7 @@ const props = defineProps({
 }
 
 .button:hover {
-    background-color: var(--woodsmoke);
-    color: var(--peach-yellow);
+    background-color: v-bind(color);
+    color: v-bind(backgroundColor);
 }
 </style>
