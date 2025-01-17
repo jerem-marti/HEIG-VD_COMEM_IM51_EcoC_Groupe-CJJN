@@ -11,7 +11,11 @@
                     sont des valeurs complémentaires. Cet ambassadeur de la plus haute tradition hôtelière
                     suisse fait partie
                     du patrimoine d’un pays où l’accueil atteint l’excellence.</p>
-                <img src="~/assets/img/beau-rivage-paysage.jpg">
+                <NuxtImg 
+                    src="beau-rivage-paysage.jpg"
+                    alt="Photo aérienne du Beau Rivage Palace"
+                    sizes="xs:100vw sm:80vw lg:50vw"
+                ></NuxtImg>
                 <a href="#">Découvrir l'histoire du Beau Rivage</a>
             </div>
         </div>

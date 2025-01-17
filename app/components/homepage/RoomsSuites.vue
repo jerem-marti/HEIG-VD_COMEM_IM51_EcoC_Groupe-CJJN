@@ -1,6 +1,4 @@
 <script setup>
-import inlineSvg from '~/composables/inlineSvg.vue';
-import BgSvg from '~/assets/icons/hero/background-waves.svg?url_encode';
 </script>
 
 <template>
@@ -9,7 +7,7 @@ import BgSvg from '~/assets/icons/hero/background-waves.svg?url_encode';
         <div class="row">
             <div class="col-lg-6">
                 <div class="item">
-                    <img class="item__img" src="~/assets/img/beau-rivage-paysage.jpg" alt="">
+                    <NuxtImg src="beau-rivage-paysage.jpg" alt="" class="item__img" height="496px"></NuxtImg>
                     <div class="item__content">
                         <h3>Chambres</h3>
                         <h4>Découvrez nos Chambres Élégantes</h4>
@@ -28,7 +26,7 @@ import BgSvg from '~/assets/icons/hero/background-waves.svg?url_encode';
 
             <div class="col-lg-6">
                 <div class="item">
-                    <img class="item__img" src="~/assets/img/beau-rivage-paysage.jpg" alt="">
+                    <NuxtImg src="beau-rivage-paysage.jpg" alt="" class="item__img" height="496px"></NuxtImg>
                     <div class="item__content">
                         <h3>Suites</h3>
                         <h4>Découvrez nos Suites Élégantes</h4>

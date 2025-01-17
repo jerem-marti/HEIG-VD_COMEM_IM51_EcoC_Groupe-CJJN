@@ -1,46 +1,34 @@
 <script setup>
-import ThePageHero from '~/components/ThePageHero.vue';
 import BackgroundHero from '~/assets/icons/hero/background-waves.svg?url_encode';
-import inlineSvg from '~/composables/inlineSvg.vue';
-import LogoSvg from '~/assets/icons/logo/logo-brp-black.svg?url_encode';
-import About from '~/components/homepage/About.vue';
-import RoomsSuites from '~/components/homepage/RoomsSuites.vue';
-import Restaurant from '~/components/homepage/Restaurant.vue';
-import Agenda from '~/components/homepage/Agenda.vue';
-import Cta from '~/components/homepage/Cta.vue';
-
-const route = useRoute()
-
 </script>
 
 <template>
     <main>
         <!-- <LogoSvg /> -->
-        <ThePageHero :bgSvgUrlEncode="BackgroundHero">
+        <ThePageHero :bgSvgUrlEncode="BackgroundHero" title="Beau-Rivage Palace" hideTitle>
             <div class="cta-content">
-                <inlineSvg :inlineSvg="LogoSvg" width="670px">
-                </inlineSvg>
+                <SvgoLogoBrpBlack class="brp-logo"/>
             </div>
         </ThePageHero>
 
         <section class="section">
-           <About />
+           <HomepageAbout />
         </section>
 
         <section class="section">
-            <RoomsSuites />
+            <HomepageRoomsSuites />
         </section>
 
         <section class="section">
-            <Restaurant />
+            <HomepageRestaurant />
         </section>
 
         <section class="section">
-            <Agenda />
+            <HomepageAgenda />
         </section>
 
         <section class="section">
-            <Cta />
+            <HomepageCta />
         </section>
     </main>
 </template>
@@ -54,5 +42,10 @@ const route = useRoute()
     justify-content: center;
     gap: 1.25rem;
     background: var(--whitesmoke);
+}
+.brp-logo {
+    width: 100%;
+    height: auto;
+    max-width: 670px;
 }
 </style>

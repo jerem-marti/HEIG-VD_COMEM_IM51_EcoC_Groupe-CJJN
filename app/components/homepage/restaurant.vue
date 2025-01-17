@@ -1,6 +1,4 @@
 <script setup>
-import inlineSvg from '~/composables/inlineSvg.vue';
-import BgSvg from '~/assets/icons/hero/background-waves.svg?url_encode';
 </script>
 
 <template>
@@ -13,8 +11,11 @@ import BgSvg from '~/assets/icons/hero/background-waves.svg?url_encode';
         <div class="row restaurant__row">
             <div class="col-lg-4 offset-lg-2">
                 <div class="restaurant__imgContainer">
-                    <img class="restaurant__img" src="~/assets/img/anne-sophie-pic.jpg"
-                        alt="Anne Sophie Pic, Cheffe au Beau Rivage Palace">
+                    <NuxtImg 
+                        src="anne-sophie-pic.jpg" 
+                        alt="Anne Sophie Pic, Cheffe au Beau Rivage Palace"
+                        sizes="xs:100vw sm:100vw md:100vw lg:33vw"
+                    ></NuxtImg>
                 </div>
             </div>
             <div class="col-lg-5">
