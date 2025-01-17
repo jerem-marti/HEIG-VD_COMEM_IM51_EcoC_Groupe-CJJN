@@ -1,14 +1,12 @@
 <template>
   <main>
     <ThePageHero title="Chambres et suites" :bgSvgUrlEncode="BackgroundHexagon" />
-    <div class="rooms">
       <h2>Chambres</h2>
       <div class="rooms-grid">
         <RoomCard v-for="room in rooms" :key="room.id" :id="room.id" :type="room.type" :name="room.name"
           :description="room.description" :img="room.img" :area="room.area" :view="room.view" :exposure="room.exposure"
           :balcony="room.balcony" />
       </div>
-    </div>
   </main>
 </template>
 
@@ -76,13 +74,11 @@ main {
   margin-right: 7%;
 }
 
-.rooms {
-  margin-bottom: 4rem;
-}
-
 .rooms-grid {
+  width: 100%;
   display: grid;
   gap: 2rem;
+  margin-bottom: 4rem;
 }
 
 /* Mobile - 1 carte par ligne */
@@ -93,14 +89,14 @@ main {
 }
 
 /* Tablette - 2 cartes par ligne */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1279px) {
   .rooms-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* Petit écran - 3 cartes par ligne */
-@media (min-width: 1024px) and (max-width: 1439px) {
+@media (min-width: 1280px) and (max-width: 1439px) {
   .rooms-grid {
     grid-template-columns: repeat(3, 1fr);
   }

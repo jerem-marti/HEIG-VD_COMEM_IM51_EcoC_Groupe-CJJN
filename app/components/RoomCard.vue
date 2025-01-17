@@ -74,11 +74,13 @@ const path = `/rooms/${props.id}`;
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  aspect-ratio: 5/6;
+  /* aspect-ratio: 5/6; */
   justify-content: space-between;
   background-color: var(--cararra);
   background-size: cover;
   background-position: center;
+  height: 25rem;
+  width: 100%;
 }
 
 h4 {
@@ -103,6 +105,7 @@ h4 {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: row;
 }
 
@@ -116,6 +119,7 @@ h4 {
   fill: var(--woodsmoke);
   width: 2rem;
   height: auto;
+  margin: 1rem 0;
 }
 
 .back .rotate-icon {
