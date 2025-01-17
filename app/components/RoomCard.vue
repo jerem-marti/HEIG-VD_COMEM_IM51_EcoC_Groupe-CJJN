@@ -65,7 +65,7 @@ function flipCard() {
   isFlipped.value = !isFlipped.value;
 }
 
-const path = `/rooms/${props.id}`;
+const path = `/chambres-suites/${props.id}`;
 
 </script>
 

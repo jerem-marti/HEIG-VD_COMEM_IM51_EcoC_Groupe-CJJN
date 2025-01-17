@@ -5,7 +5,7 @@
         </div>
         <div class="header-nav">
             <NuxtLink to="/" class="header-nav list-item-link" exact-active-class="active">Accueil</NuxtLink>
-            <NuxtLink to="/rooms" class="header-nav list-item-link" exact-active-class="active">Chambres & Suites
+            <NuxtLink to="/chambres-suites" class="header-nav list-item-link" exact-active-class="active">Chambres & Suites
             </NuxtLink>
             <NuxtLink to="/restaurants" class="header-nav list-item-link" exact-active-class="active">Restaurants & Bars
             </NuxtLink>
