@@ -1,7 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: true,
+  nitro: {
+    preset: 'netlify', // Spécifique à Netlify
+  },
+
   // https://nuxt.com/modules
-  modules: ['@nuxthub/core', '@nuxt/eslint', 'nuxt-svgo', '@nuxt/image'],
+  modules: ['@nuxt/eslint', 'nuxt-svgo', '@nuxt/image'],
 
   // https://devtools.nuxt.com
   devtools: { enabled: true },
@@ -16,9 +21,6 @@ export default defineNuxtConfig({
   // https://nuxt.com/docs/getting-started/upgrade#testing-nuxt-4
   future: { compatibilityVersion: 4 },
   compatibilityDate: '2024-07-30',
-
-  // https://hub.nuxt.com/docs/getting-started/installation#options
-  hub: {},
 
   // https://eslint.nuxt.com
   eslint: {

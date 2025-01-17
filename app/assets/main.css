@@ -2,15 +2,15 @@
 
 /* Redéfinir les styles globaux pour les titres */
 h1, h2 {
-  font-family: var(--brp-font);
+  font-family: var(--brp-font), 'Georgia', serif;
 }
 
 h3, h4, h5, h6 {
-  font-family: var(--antarctica-semibold);
+  font-family: var(--antarctica-semibold), 'Georgia', serif;
 }
 
 body {
-  font-family: var(--antarctica-light);
+  font-family: var(--antarctica-light), Arial, sans-serif;;
   background-color: var(--whitesmoke);
   color: var(--woodsmoke);
   font-size: 1rem;
@@ -34,6 +34,12 @@ font-size: 1.5rem;
 
 .legend {
   font-size: 0.75rem;
+}
+
+img {
+  display: block; /* Évite les espaces blancs sous les images */
+  width: 100vw; /* Force l'image à occuper 100% de la largeur de la fenêtre */
+  height: auto; /* Respecte le ratio d'aspect */
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
