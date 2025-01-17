@@ -18,7 +18,6 @@ const props = defineProps({
 });
 
 const bgImgStyle = props.bgSvgUrlEncode ? `url("${props.bgSvgUrlEncode}")` : 'none';
-console.log(bgImgStyle);
 
 </script>
 
