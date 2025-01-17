@@ -3,15 +3,19 @@
 @font-face {
   font-family: 'Antartica-Light';
   src: url('./fonts/Antarctica-Light.otf') format('opentype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Antartica-SemiBold';
-  src: url('./fonts/Antarctica-SemiBold.otf') format('opentype');}
+  src: url('./fonts/Antarctica-SemiBold.otf') format('opentype');
+  font-display: swap;
+}
 
 @font-face {
   font-family: 'BRP';
   src: url('./fonts/Beau-Rivage-Title.otf') format('opentype');
+  font-display: swap;
 }
 
 :root {
