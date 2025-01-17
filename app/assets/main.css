@@ -23,14 +23,20 @@ body {
 
 h1,.h1 {
 font-size: 5.375rem;
+padding-top: 4rem;
+padding-bottom: 2rem;
 } 
 
 h2,.h2 {
 font-size: 3rem;
+padding-top: 2rem;
+padding-bottom: 1rem;
 }
 
 h3,.h3 {
 font-size: 2rem;
+padding-top: 1rem;
+padding-bottom: 0.5rem;
 }
 
 h4.h4 {
@@ -53,10 +59,20 @@ img {
   height: auto; /* Respecte le ratio d'aspect */
 }
 
+section {
+  padding: 2rem 0;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 1200px) {
   h1,.h1 {
     font-size: 4.8rem;
+  }
+  h2, .h2 {
+    font-size: 2.8rem;
+  }
+  h3, .h3 {
+    font-size: 1.9rem;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -64,11 +80,23 @@ img {
   h1,.h1 {
     font-size: 4rem;
   }
+  h2, .h2 {
+    font-size: 2,56rem;
+  }
+  h3, .h3 {
+    font-size: 1.5rem;
+  }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 768px) {
   h1,.h1 {
     font-size: 3.1rem;
+  }
+  h2, .h2 {
+    font-size: 2.15rem;
+  }
+  h3, .h3 {
+    font-size: 1.35rem;
   }
 }
 /* Extra small devices (phones, 600px and down) */
@@ -76,19 +104,12 @@ img {
   h1,.h1 {
     font-size: 2.6rem;
   }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  
-}
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
+  h2, .h2 {
+    font-size: 1.8rem;
+  }
+  h3, .h3 {
+    font-size: 1.2rem;
+  }
 }
 
 ul {

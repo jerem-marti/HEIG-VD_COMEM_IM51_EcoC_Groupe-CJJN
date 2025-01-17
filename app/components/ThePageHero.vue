@@ -35,7 +35,6 @@ console.log(bgImgStyle);
     width: 100%;
     /* height: 70dvh; */
     height: auto;
-    max-height: 50rem;
     padding: 12dvw 10dvw;
     flex-direction: column;
     justify-content: center;

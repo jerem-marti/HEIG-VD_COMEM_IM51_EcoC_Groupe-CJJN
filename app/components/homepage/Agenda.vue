@@ -21,7 +21,7 @@
                     <h3>L'heure du thé</h3>
                     <p>Pour se réchauffer après une après-midi shopping ou profiter d’une pause dans une ambiance
                         chaleureuse, notre Lobby Lounge vous propose son véritable afternoon tea à l’anglaise.</p>
-                    <a href="#">Voir l'event</a>
+                    <LinkButton msg="Voir l'event" path="#" />
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
@@ -36,7 +36,7 @@
                     <h3>L'heure du thé</h3>
                     <p>Pour se réchauffer après une après-midi shopping ou profiter d’une pause dans une ambiance
                         chaleureuse, notre Lobby Lounge vous propose son véritable afternoon tea à l’anglaise.</p>
-                    <a href="#">Voir l'event</a>
+                    <LinkButton msg="Voir l'event" path="#" />
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
@@ -51,7 +51,7 @@
                     <h3>L'heure du thé</h3>
                     <p>Pour se réchauffer après une après-midi shopping ou profiter d’une pause dans une ambiance
                         chaleureuse, notre Lobby Lounge vous propose son véritable afternoon tea à l’anglaise.</p>
-                    <a href="#">Voir l'event</a>
+                    <LinkButton msg="Voir l'event" path="#" />
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
@@ -66,7 +66,7 @@
                     <h3>L'heure du thé</h3>
                     <p>Pour se réchauffer après une après-midi shopping ou profiter d’une pause dans une ambiance
                         chaleureuse, notre Lobby Lounge vous propose son véritable afternoon tea à l’anglaise.</p>
-                    <a href="#">Voir l'event</a>
+                    <LinkButton msg="Voir l'event" path="#" />
                 </div>
             </div>
         </div>
@@ -78,5 +78,8 @@
         @media (max-width: 992px) {
             margin-bottom: 2rem;
         }
+    }
+    .item h3 {
+        padding: 0
     }
 </style>
