@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   ssr: true,
   nitro: {
-    preset: 'netlify', // Spécifique à Netlify
+    preset: 'vercel', // Spécifique à Netlify
   },
 
   // https://nuxt.com/modules
