@@ -14,7 +14,7 @@
                     <NuxtImg 
                         src="anne-sophie-pic.jpg" 
                         alt="Anne Sophie Pic, Cheffe au Beau Rivage Palace"
-                        sizes="xs:100vw sm:100vw md:100vw lg:33vw"
+                        sizes="xs:100vw sm:510px md:100vw lg:33vw 2xl:450px"
                     ></NuxtImg>
                 </div>
             </div>
