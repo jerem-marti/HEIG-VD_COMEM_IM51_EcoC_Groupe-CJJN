@@ -8,7 +8,7 @@
             <div class="col-lg-6">
                 <div class="item">
                     <NuxtImg 
-                        src="rooms-thumbnails\room-thumb.jpg" 
+                        src="rooms-thumbnails/room-thumb.jpg" 
                         alt="" 
                         class="item__img" 
                         height="496px"
@@ -33,7 +33,7 @@
             <div class="col-lg-6">
                 <div class="item">
                     <NuxtImg 
-                        src="rooms-thumbnails\suite-thumb.webp"
+                        src="rooms-thumbnails/suite-thumb.webp"
                         alt=""
                         class="item__img"
                         height="496px"
