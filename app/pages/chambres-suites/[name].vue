@@ -46,7 +46,14 @@ const reservationPath = '/reservation?' + roomInfos.id;
             </div>
         </ThePageHero>
         <div class="images-grid">
-            <NuxtImg v-for="(img, index) in roomInfos.imagesPath" :key="index" :src="img" :alt="roomInfos.name" />
+            <NuxtImg 
+                v-for="(img, index) in roomInfos.imagesPath" 
+                :key="index" 
+                :src="img" 
+                :alt="roomInfos.name"
+                sizes="xs:95vw md:40vw"
+                quality="60"
+            />
         </div>
         <div class="room-details">
             <div class="practical-infos">

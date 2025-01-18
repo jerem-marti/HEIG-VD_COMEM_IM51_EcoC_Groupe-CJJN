@@ -7,7 +7,13 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="item">
-                    <NuxtImg src="beau-rivage-paysage.jpg" alt="" class="item__img" height="496px"></NuxtImg>
+                    <NuxtImg 
+                        src="rooms-thumbnails\room-thumb.jpg" 
+                        alt="" 
+                        class="item__img" 
+                        height="496px"
+                        sizes="250px"
+                    ></NuxtImg>
                     <div class="item__content">
                         <h3>Chambres</h3>
                         <h4>Découvrez nos Chambres Élégantes</h4>
@@ -26,7 +32,13 @@
 
             <div class="col-lg-6">
                 <div class="item">
-                    <NuxtImg src="beau-rivage-paysage.jpg" alt="" class="item__img" height="496px"></NuxtImg>
+                    <NuxtImg 
+                        src="rooms-thumbnails\suite-thumb.webp"
+                        alt=""
+                        class="item__img"
+                        height="496px"
+                        sizes="250px"
+                    ></NuxtImg>
                     <div class="item__content">
                         <h3>Suites</h3>
                         <h4>Découvrez nos Suites Élégantes</h4>

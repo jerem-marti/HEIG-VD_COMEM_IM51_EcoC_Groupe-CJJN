@@ -21,7 +21,7 @@ const rooms = ref([
     id: 1,
     type: 'room',
     name: 'Supérieure vue ville',
-    img: 'https://www.brp.ch/fileadmin/documents/brp.ch/images/chambres-suites/tuiles/Chambre-superieur-vue-ville-.jpg',
+    img: 'rooms-thumbnails/deluxe_jardin_bleuargent.jpg',
     area: 25,
     view: 'Vue sur ville et jardins',
     exposure: 'Nord'
@@ -30,7 +30,7 @@ const rooms = ref([
     id: 2,
     type: 'room',
     name: 'Supérieure vue lac & alpes',
-    img: 'https://www.brp.ch/fileadmin/documents/brp.ch/images/chambres-suites/tuiles/Chambre-superieur-vue-ville-.jpg',
+    img: 'rooms-thumbnails/deluxe_riviera_beige.webp',
     area: 32,
     view: 'Vue sur lac & Alpes ou port d\'Ouchy',
     exposure: 'Sud',
@@ -40,7 +40,7 @@ const rooms = ref([
     id: 3,
     type: 'room',
     name: 'Deluxe',
-    img: 'https://www.brp.ch/fileadmin/documents/brp.ch/images/chambres-suites/tuiles/Chambre-superieur-vue-ville-.jpg',
+    img: 'rooms-thumbnails/room_superior.jpg',
     area: 45,
     view: 'Vue sur lac & Alpes ou jardins',
     exposure: 'Sud',
@@ -50,7 +50,7 @@ const rooms = ref([
     id: 4,
     type: 'room',
     name: 'Deluxe Riviera',
-    img: 'https://www.brp.ch/fileadmin/documents/brp.ch/images/chambres-suites/tuiles/Chambre-superieur-vue-ville-.jpg',
+    img: 'rooms-thumbnails/superior_room_lake_view.webp',
     area: 50,
     view: 'Vue sur lac & Alpes',
     exposure: 'Sud'
@@ -58,9 +58,9 @@ const rooms = ref([
   {
     id: 5,
     type: 'suit',
-    name: 'Junior Suite Palace',
-    img: 'https://www.brp.ch/fileadmin/documents/brp.ch/images/chambres-suites/tuiles/Chambre-superieur-vue-ville-.jpg',
-    description: 'Suite de 60m2 avec vue sur le lac et les Alpes'},
+    name: 'Suite Riviera',
+    img: 'rooms-thumbnails/sriviera.webp',
+    description: 'L’art de vivre se fait ici élégance. Sur une surface de 90m2 et 2 terrasses d\'agrément, la Suite Riviera célèbre la Tradition en Mouvement, la devise du Beau-Rivage Palace.'},
 ]);
 </script>
 
@@ -82,21 +82,21 @@ main {
 }
 
 /* Mobile - 1 carte par ligne */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .rooms-grid {
     grid-template-columns: 1fr;
   }
 }
 
 /* Tablette - 2 cartes par ligne */
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) {
   .rooms-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* Petit écran - 3 cartes par ligne */
-@media (min-width: 1280px) and (max-width: 1439px) {
+@media (min-width: 1280px) {
   .rooms-grid {
     grid-template-columns: repeat(3, 1fr);
   }

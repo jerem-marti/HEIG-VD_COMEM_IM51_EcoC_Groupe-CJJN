@@ -1,6 +1,6 @@
 <template>
   <div class="card-container" :class="[isFlipped ? 'back' : 'front']"
-    :style="!isFlipped ? { backgroundImage: `url(${img})` } : {}">
+    :style="!isFlipped ? { backgroundImage: `url(${imgUrl})` } : {}">
     <h4 :class="[isFlipped ? 'back' : 'front']">{{ name }}</h4>
     <div v-if="isFlipped" class="text-container">
       <div v-if="type === 'room'">
@@ -22,7 +22,6 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
 
 const props = defineProps({
   id: {
@@ -66,6 +65,30 @@ function flipCard() {
 }
 
 const path = `/chambres-suites/${props.id}`;
+
+const { breakpoint } = useViewport(); // Reactive viewport data
+const cardImgWidth = computed(() => {
+  let width = 0;
+  if (breakpoint.value === 'xs') {
+    width = 640;
+  } else if (breakpoint.value === 'sm') {
+    width = 768;
+  } else if (breakpoint.value === 'md') {
+    width = 512;
+  } else if (breakpoint.value === 'lg') {
+    width = 640;
+  } else if (breakpoint.value === 'xl') {
+    width = 480;
+  } else {
+    width = 600;
+  }
+  return width;
+});
+
+const imgToUrl = useImage()
+const imgUrl = computed(() => {
+  return imgToUrl(props.img, { width: cardImgWidth.value });
+})
 
 </script>
 
