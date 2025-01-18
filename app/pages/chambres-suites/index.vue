@@ -1,12 +1,19 @@
 <template>
   <main>
     <ThePageHero title="Chambres et suites" :bgSvgUrlEncode="BackgroundHexagon" />
-      <h2>Chambres</h2>
-      <div class="rooms-grid">
-        <RoomCard v-for="room in rooms" :key="room.id" :id="room.id" :type="room.type" :name="room.name"
-          :description="room.description" :img="room.img" :area="room.area" :view="room.view" :exposure="room.exposure"
-          :balcony="room.balcony" />
-      </div>
+    <h2 class="content">Chambres</h2>
+    <div class="rooms-grid content">
+      <RoomCard v-for="room in rooms" :key="room.id" :id="room.id" :type="room.type" :name="room.name"
+        :description="room.description" :img="room.img" :area="room.area" :view="room.view" :exposure="room.exposure"
+        :balcony="room.balcony" />
+    </div>
+    <h2 class="content">Suites</h2>
+    <div class="rooms-grid content">
+      <RoomCard v-for="suite in suites" :key="suite.id" :id="suite.id" :type="suite.type" :name="suite.name"
+        :description="suite.description" :img="suite.img" :area="suite.area" :view="suite.view" :exposure="suite.exposure"
+        :balcony="suite.balcony" />
+    </div>
+    <Newsletter class="content"/>
   </main>
 </template>
 
@@ -55,6 +62,8 @@ const rooms = ref([
     view: 'Vue sur lac & Alpes',
     exposure: 'Sud'
   },
+]);
+const suites = ref([
   {
     id: 5,
     type: 'suit',
@@ -69,9 +78,6 @@ const rooms = ref([
 main {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-left: 7%;
-  margin-right: 7%;
 }
 
 .rooms-grid {
@@ -81,10 +87,19 @@ main {
   margin-bottom: 4rem;
 }
 
+.content {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 7%;
+}
+
 /* Mobile - 1 carte par ligne */
 @media (max-width: 768px) {
   .rooms-grid {
     grid-template-columns: 1fr;
+  }
+  .content {
+    padding: 0 1rem;
   }
 }
 
