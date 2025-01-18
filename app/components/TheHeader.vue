@@ -21,7 +21,7 @@
         <div class="navlist" v-if="mobileMenuEnabled && mobileMenuOpened">
             <NuxtLink to="/" class="navlist-item" exact-active-class="active" @click="closeMobileMenu">Accueil</NuxtLink>
             <NuxtLink to="/chambres-suites" class="navlist-item" exact-active-class="active" @click="closeMobileMenu">Chambres & Suites</NuxtLink>
-            <NuxtLink to="/restaurants" class="navlist-item" exact-active-class="active" @click="closeMobileMenu">Restaurants & Bars</NuxtLink>
+            <NuxtLink to="/restaurants-bars" class="navlist-item" exact-active-class="active" @click="closeMobileMenu">Restaurants & Bars</NuxtLink>
             <NuxtLink to="/spas" class="navlist-item" exact-active-class="active" @click="closeMobileMenu">Spa Guerlain</NuxtLink>
         </div>
     </header>
