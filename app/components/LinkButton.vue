@@ -31,7 +31,6 @@ const color = props.colorInverted ? 'var(--peach-yellow)' : 'var(--woodsmoke)';
     font-size: 1rem;
     font-family: var(--antarctica-semibold);
     display: inline-flex;
-    height: 2.5rem;
     padding: 0.7rem 1.25rem;
     justify-content: center;
     align-items: center;

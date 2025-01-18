@@ -6,7 +6,18 @@ export default defineNuxtConfig({
   },
 
   // https://nuxt.com/modules
-  modules: ['@nuxt/eslint', 'nuxt-svgo', '@nuxt/image'],
+  modules: ['@nuxt/eslint', 'nuxt-svgo', '@nuxt/image', 'nuxt-viewport'],
+
+  viewport: {
+    breakpoints: {
+      xs: 0,       // Extra small devices (e.g., phones)
+      sm: 640,     // Small devices (e.g., tablets in portrait)
+      md: 768,     // Medium devices (e.g., tablets in landscape)
+      lg: 1024,    // Large devices (e.g., desktops)
+      xl: 1280,    // Extra large devices (e.g., large desktops)
+      '2xl': 1536, // Ultra large devices
+    },
+  },
 
   // https://devtools.nuxt.com
   devtools: { enabled: true },

@@ -1,29 +1,56 @@
 <template>
     <header class="header">
-        <div class="logo-container">
-            <SvgoBrpIcon class="header-logo" />
+        <div class="navbar">
+            <div class="logo-container">
+                <SvgoBrpIcon class="header-logo" @click="navigateTo('/')" />
+            </div>
+            <div class="header-nav" v-if="!mobileMenuEnabled">
+                <NuxtLink to="/" class="header-nav list-item-link" exact-active-class="active">Accueil</NuxtLink>
+                <NuxtLink to="/chambres-suites" class="header-nav list-item-link" exact-active-class="active">Chambres & Suites
+                </NuxtLink>
+                <NuxtLink to="/restaurants" class="header-nav list-item-link" exact-active-class="active">Restaurants & Bars
+                </NuxtLink>
+                <NuxtLink to="/spas" class="header-nav list-item-link" exact-active-class="active">Spa Guerlain</NuxtLink>
+            </div>
+            <div class="button-container">
+                <LinkButton class="button" msg="Réserver" path="/reservation" />
+                <SvgoHeaderHamburgerMenu class="menu-toggle" v-if="mobileMenuEnabled && !mobileMenuOpened" @click="toggleMobileMenu" />
+                <SvgoHeaderCloseMenu class="menu-toggle" v-if="mobileMenuEnabled && mobileMenuOpened" @click="toggleMobileMenu" />
+            </div>
         </div>
-        <div class="header-nav">
-            <NuxtLink to="/" class="header-nav list-item-link" exact-active-class="active">Accueil</NuxtLink>
-            <NuxtLink to="/chambres-suites" class="header-nav list-item-link" exact-active-class="active">Chambres & Suites
-            </NuxtLink>
-            <NuxtLink to="/restaurants-bars" class="header-nav list-item-link" exact-active-class="active">Restaurants & Bars
-            </NuxtLink>
-            <NuxtLink to="/spas" class="header-nav list-item-link" exact-active-class="active">Spa Guerlain</NuxtLink>
+        <div class="navlist" v-if="mobileMenuEnabled && mobileMenuOpened">
+            <NuxtLink to="/" class="navlist-item" exact-active-class="active" @click="closeMobileMenu">Accueil</NuxtLink>
+            <NuxtLink to="/chambres-suites" class="navlist-item" exact-active-class="active" @click="closeMobileMenu">Chambres & Suites</NuxtLink>
+            <NuxtLink to="/restaurants-bars" class="navlist-item" exact-active-class="active" @click="closeMobileMenu">Restaurants & Bars</NuxtLink>
+            <NuxtLink to="/spas" class="navlist-item" exact-active-class="active" @click="closeMobileMenu">Spa Guerlain</NuxtLink>
         </div>
-        <div class="button-container">
-            <LinkButton class="button" msg="Réserver" path="/reservation" />
-        </div>
-
     </header>
 
 </template>
 
 <script setup>
+
+const { breakpoint } = useViewport(); // Reactive viewport data
+const mobileMenuOpened = ref(false);
+
+const toggleMobileMenu = () => {
+  if (breakpoint.value === 'md' || breakpoint.value === 'sm' || breakpoint.value === 'xs') {
+    mobileMenuOpened.value = !mobileMenuOpened.value;
+  }
+};
+
+const closeMobileMenu = () => {
+  mobileMenuOpened.value = false;
+};
+
+const mobileMenuEnabled = computed(() => {
+  return breakpoint.value === 'xs' || breakpoint.value === 'md' || breakpoint.value === 'sm';
+});
+
 </script>
 
 <style scoped>
-header {
+.navbar {
     display: flex;
     align-items: center;
     column-gap: 2rem;
@@ -59,6 +86,7 @@ header {
 .button-container {
     display: flex;
     align-items: center;
+    padding: 0 1rem;
 }
 
 .button {
@@ -67,5 +95,25 @@ header {
 
 .active {
     font-family: var(--antarctica-semibold);
+}
+
+.menu-toggle {
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.navlist {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--cararra);
+    position: absolute;
+    top: 4.5rem;
+    right: 0;
+    z-index: 100;
+    width: 100%;
+    border-top: 2px solid var(--peach-yellow);
 }
 </style>
