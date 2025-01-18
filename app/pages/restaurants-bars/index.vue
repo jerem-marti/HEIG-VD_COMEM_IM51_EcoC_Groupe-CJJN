@@ -3,7 +3,7 @@
         <ThePageHero title="Restaurants & Bars" :bgSvgUrlEncode="BackgroundHexagon" />
         <div class="restaurants-grid">
             <RestaurantCard v-for="restaurant in restaurants" :key="restaurant.id" :id="restaurant.id"
-                :type="restaurant.type" :name="restaurant.name" :mainImg="restaurant.mainImg" />
+                :type="restaurant.type" :name="restaurant.name" :img="restaurant.mainImg" />
         </div>
         <Newsletter/>
     </main>
@@ -17,25 +17,25 @@ const restaurants = ref([
         id: 1,
         name: 'PIC au Beau-Rivage Palace',
         type: 'Restaurant gastronomique',
-        mainImg: 'https://www.brp.ch/fileadmin/documents/brp.ch/images/restaurants-bars/PIC/Pic_beaurivage_palace_mike_wolf_5.png',
+        mainImg: 'restaurants/thumb_pic.webp',
     },
     {
         id: 2,
         name: 'Café Beau-Rivage',
         type: 'Brasserie de luxe',
-        mainImg: 'https://www.brp.ch/fileadmin/documents/brp.ch/images/restaurants-bars/cafe_beau_rivage/BeauRivagePalace_RestaurantCafeBeauRivage_Interieur_Ambiance01-BD.jpg',
+        mainImg: 'restaurants/thumb_restaurant_cafe.webp',
     },
     {
-        id: 1,
-        name: 'PIC au Beau-Rivage Palace',
-        type: 'Restaurant gastronomique',
-        mainImg: 'https://www.brp.ch/fileadmin/documents/brp.ch/images/restaurants-bars/PIC/Pic_beaurivage_palace_mike_wolf_5.png',
+        id: 4,
+        name: 'La Terrasse',
+        type: 'Restaurant petit déjeuner et brunch',
+        mainImg: 'restaurants/thumb_la_terrasse.webp',
     },
     {
-        id: 2,
-        name: 'Café Beau-Rivage',
-        type: 'Brasserie de luxe',
-        mainImg: 'https://www.brp.ch/fileadmin/documents/brp.ch/images/restaurants-bars/cafe_beau_rivage/BeauRivagePalace_RestaurantCafeBeauRivage_Interieur_Ambiance01-BD.jpg',
+        id: 3,
+        name: 'Kaigan',
+        type: 'Restaurant japonais',
+        mainImg: 'restaurants/thumb_kaigan.webp',
     }
 ])
 </script>
@@ -46,19 +46,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 7%;
-  margin-right: 7%;
-}
-
-.title {
-    background-image: url('../../public/svg/fond-rooms.svg');
-    background-position: center;
-    background-size: auto 100%;
-    width: 100%;
-    height: 40rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .restaurants-grid {
@@ -67,6 +54,13 @@ main {
     gap: 1rem;
     width: 100%; 
     box-sizing: border-box; 
+    padding: 0 7%;
+}
+@media screen and (max-width: 640px) {
+    .restaurants-grid {
+        padding: 0 1rem;
+    }
+    
 }
 
 </style>

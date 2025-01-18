@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink class="card" :style="{ backgroundImage: `url(${mainImg})` }" :to="path">
+  <NuxtLink class="card" :style="{ backgroundImage: `url(${imgUrl})` }" :to="path">
     <div class="infos">
       <p class="name">{{ name }}</p>
       <p>{{ type }}</p>
@@ -21,7 +21,7 @@ const props = defineProps({
     type: String,
     required: true,
   },
-  mainImg: {
+  img: {
     type: String,
     required: true,
   }
@@ -29,6 +29,21 @@ const props = defineProps({
 
 const path = `/restaurants-bars/${props.id}`;
 
+const { breakpoint } = useViewport(); // Reactive viewport data
+const cardImgWidth = computed(() => {
+  let width = 0;
+  if (breakpoint.value === 'xs') {
+    width = 640;
+  } else {
+    width = 500;
+  }
+  return width;
+});
+
+const imgToUrl = useImage()
+const imgUrl = computed(() => {
+  return imgToUrl(props.img, { width: cardImgWidth.value });
+})
 
 </script>
 
