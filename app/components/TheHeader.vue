@@ -8,7 +8,7 @@
                 <NuxtLink to="/" class="header-nav list-item-link" exact-active-class="active">Accueil</NuxtLink>
                 <NuxtLink to="/chambres-suites" class="header-nav list-item-link" exact-active-class="active">Chambres & Suites
                 </NuxtLink>
-                <NuxtLink to="/restaurants" class="header-nav list-item-link" exact-active-class="active">Restaurants & Bars
+                <NuxtLink to="/restaurants-bars" class="header-nav list-item-link" exact-active-class="active">Restaurants & Bars
                 </NuxtLink>
                 <NuxtLink to="/spas" class="header-nav list-item-link" exact-active-class="active">Spa Guerlain</NuxtLink>
             </div>
