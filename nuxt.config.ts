@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   ssr: true,
   nitro: {
-    preset: 'vercel', // Spécifique à Netlify
+    preset: 'node-server', 
   },
 
   // https://nuxt.com/modules
@@ -57,4 +57,10 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/main.css'],
+
+  routeRules: {
+    "/spa-guerlain": {
+      redirect: "/spa-guerlain/le-spa",
+    },
+  },
 })

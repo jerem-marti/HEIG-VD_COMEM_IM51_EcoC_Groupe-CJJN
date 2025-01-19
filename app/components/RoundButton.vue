@@ -20,7 +20,11 @@ const props = defineProps({
     link: {
         type: String,
         required: true,
-    }
+    },
+    backgroundColor: {
+        type: String,
+        default: 'var(--whitesmoke)',
+    },
 });
 
 </script>
@@ -35,7 +39,7 @@ const props = defineProps({
 .visual {
     width: 6rem;
     height: 6rem;
-    background-color: var(--whitesmoke);
+    background-color: v-bind(props.backgroundColor);
     border-radius: 100%;
     display: flex;
     justify-content: center;

@@ -10,7 +10,7 @@
                 </NuxtLink>
                 <NuxtLink to="/restaurants-bars" class="header-nav list-item-link" exact-active-class="active">Restaurants & Bars
                 </NuxtLink>
-                <NuxtLink to="/spas" class="header-nav list-item-link" exact-active-class="active">Spa Guerlain</NuxtLink>
+                <NuxtLink to="/spa-guerlain" class="header-nav list-item-link" active-class="active">Spa Guerlain</NuxtLink>
             </div>
             <div class="button-container">
                 <LinkButton class="button" msg="Réserver" path="/reservation" />
@@ -22,7 +22,7 @@
             <NuxtLink to="/" class="navlist-item" exact-active-class="active" @click="closeMobileMenu">Accueil</NuxtLink>
             <NuxtLink to="/chambres-suites" class="navlist-item" exact-active-class="active" @click="closeMobileMenu">Chambres & Suites</NuxtLink>
             <NuxtLink to="/restaurants-bars" class="navlist-item" exact-active-class="active" @click="closeMobileMenu">Restaurants & Bars</NuxtLink>
-            <NuxtLink to="/spas" class="navlist-item" exact-active-class="active" @click="closeMobileMenu">Spa Guerlain</NuxtLink>
+            <NuxtLink to="/spa-guerlain" class="navlist-item" exact-active-class="active" @click="closeMobileMenu">Spa Guerlain</NuxtLink>
         </div>
     </header>
 
