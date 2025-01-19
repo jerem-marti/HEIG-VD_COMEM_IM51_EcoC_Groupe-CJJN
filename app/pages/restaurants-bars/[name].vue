@@ -21,21 +21,21 @@
         </div>
       </div>
       <div class="button-container">
-        <RestaurantRoundButton v-if="restaurant.infos.menu" label="Menu" :link="restaurant.infos.menu">
+        <RoundButton v-if="restaurant.infos.menu" label="Menu" :link="restaurant.infos.menu">
           <SvgoRestaurantsIconMenu />
-        </RestaurantRoundButton>
-        <RestaurantRoundButton v-if="restaurant.infos.drink" label="Boissons" :link="restaurant.infos.drink">
+        </RoundButton>
+        <RoundButton v-if="restaurant.infos.drink" label="Boissons" :link="restaurant.infos.drink">
           <SvgoRestaurantsIconBrochure />
-        </RestaurantRoundButton>
-        <RestaurantRoundButton v-if="restaurant.infos.wine" label="Vins" :link="restaurant.infos.wine">
+        </RoundButton>
+        <RoundButton v-if="restaurant.infos.wine" label="Vins" :link="restaurant.infos.wine">
           <SvgoRestaurantsIconWine />
-        </RestaurantRoundButton>
-        <RestaurantRoundButton v-if="restaurant.infos.booking" label="Réservations" :link="restaurant.infos.booking">
+        </RoundButton>
+        <RoundButton v-if="restaurant.infos.booking" label="Réservations" :link="restaurant.infos.booking">
           <SvgoRestaurantsIconCalendar />
-        </RestaurantRoundButton>
-        <RestaurantRoundButton v-if="restaurant.infos.gift" label="Bon cadeau" :link="restaurant.infos.gift">
+        </RoundButton>
+        <RoundButton v-if="restaurant.infos.gift" label="Bon cadeau" :link="restaurant.infos.gift">
           <SvgoRestaurantsIconGift />
-        </RestaurantRoundButton>
+        </RoundButton>
       </div>
       <div class="pratical-infos">
         <h4 class="pratical-infos-title">Informations pratiques</h4>

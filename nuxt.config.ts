@@ -57,4 +57,10 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/main.css'],
+
+  routeRules: {
+    "/spa-guerlain": {
+      redirect: "/spa-guerlain/le-spa",
+    },
+  },
 })
